@@ -5,45 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>VeloTrade | Practice Trading with AI Risk Coaching</title>
   <meta name="description" content="Practice forex, crypto and stocks with virtual funds and AI risk coaching.">
-  <style>
-    :root { --bg:#0b0f19; --card:#141a2a; --text:#e8ecf4; --muted:#8b95a9; --green:#22c55e; }
-    * { box-sizing:border-box; margin:0; padding:0; }
-    body { font-family:system-ui,-apple-system,Segoe UI,sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
-    header { display:flex; justify-content:space-between; align-items:center; padding:20px 6%; }
-    .logo { font-weight:800; font-size:1.3rem; }
-    .logo span { color:var(--green); }
-    .hero { text-align:center; padding:80px 6% 60px; max-width:800px; margin:auto; }
-    .hero h1 { font-size:clamp(2rem,5vw,3.2rem); line-height:1.2; margin-bottom:16px; }
-    .hero p { color:var(--muted); font-size:1.1rem; margin-bottom:28px; }
-    .btn { display:inline-block; background:var(--green); color:#000; padding:14px 28px; border-radius:10px; text-decoration:none; font-weight:700; }
-    .features { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px; padding:40px 6%; max-width:1000px; margin:auto; }
-    .card { background:var(--card); padding:24px; border-radius:14px; }
-    .card h3 { margin-bottom:8px; }
-    .card p { color:var(--muted); font-size:.95rem; }
-    footer { text-align:center; color:var(--muted); font-size:.8rem; padding:40px 6%; max-width:800px; margin:auto; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <div class="logo">Velo<span>Trade</span></div>
-    <a class="btn" href="#">Coming soon</a>
+    <a class="logo" href="./">Velo<span>Trade</span></a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
   </header>
 
-  <section class="hero">
+  <div class="hero">
     <h1>Trade smarter with AI risk coaching</h1>
     <p>Practice forex, crypto and stocks with a $10,000 demo account. No real money at risk.</p>
-    <a class="btn" href="#">Join the waitlist</a>
+    <a class="btn" href="#waitlist">Join the waitlist</a>
+  </div>
+
+  <section id="features">
+    <h2>Built to help you practice well</h2>
+    <p class="sub">Learn the habits that protect your capital before you ever risk real money.</p>
+    <div class="grid">
+      <div class="card"><h3>Live demo trading</h3><p>Real-time charts and a virtual balance to practice safely.</p></div>
+      <div class="card"><h3>AI risk coach</h3><p>Pre-trade checks and reviews that explain your risk in plain language.</p></div>
+      <div class="card"><h3>Risk guardrails</h3><p>Set daily loss and position limits to build good habits.</p></div>
+    </div>
   </section>
 
-  <section class="features">
-    <div class="card"><h3>📈 Live demo trading</h3><p>Real-time charts and a virtual balance to practice safely.</p></div>
-    <div class="card"><h3>🤖 AI risk coach</h3><p>Pre-trade checks and reviews that explain your risk in plain language.</p></div>
-    <div class="card"><h3>🛡️ Risk guardrails</h3><p>Set daily loss and position limits to build good habits.</p></div>
+  <section id="pricing">
+    <h2>Simple plans</h2>
+    <p class="sub">Final prices are shown in the app before you subscribe.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Free</h3><div class="price">$0</div>
+        <ul><li>Demo trading and charts</li><li>Watchlist</li><li>3 AI analyses per day</li><li>3 price alerts</li></ul>
+      </div>
+      <div class="card featured">
+        <h3>Pro</h3><div class="price">Coming soon</div>
+        <ul><li>Everything in Free</li><li>AI market briefs</li><li>Pre-trade checks</li><li>Unlimited alerts</li></ul>
+      </div>
+      <div class="card">
+        <h3>Premium</h3><div class="price">Coming soon</div>
+        <ul><li>Everything in Pro</li><li>AI chat assistant</li><li>Weekly AI coach summary</li><li>Strategy backtesting</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>Frequently asked questions</h2>
+    <p class="sub">&nbsp;</p>
+    <details><summary>Is this real-money trading?</summary><p>No. VeloTrade is a demo app that uses virtual funds. You cannot deposit or withdraw real money.</p></details>
+    <details><summary>Does the AI tell me what to buy?</summary><p>No. The AI explains risk, reviews your trades and helps you learn. It does not guarantee results and is not financial advice.</p></details>
+    <details><summary>Is it free?</summary><p>Yes, the core demo trading is free. Optional paid plans unlock more AI features.</p></details>
+    <details><summary>When will the app launch?</summary><p>Join the waitlist below and we will email you when it is available.</p></details>
+  </section>
+
+  <section id="waitlist">
+    <h2>Join the waitlist</h2>
+    <p class="sub">Be first to try VeloTrade when it launches.</p>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <button class="btn" type="submit">Notify me</button>
+    </form>
   </section>
 
   <footer>
-    VeloTrade is an educational demo app using virtual funds. AI insights are not financial advice.
-    Leveraged trading carries a high risk of loss.
+    <p><a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms.html">Terms of Service</a> &nbsp;|&nbsp; <a href="mailto:YOUR_EMAIL">Contact</a></p>
+    <p style="margin-top:12px">VeloTrade is an educational demo app using virtual funds. AI insights are not financial advice. Leveraged trading carries a high risk of loss.</p>
   </footer>
 </body>
 </html>
